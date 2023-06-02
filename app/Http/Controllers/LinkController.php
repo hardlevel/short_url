@@ -12,7 +12,7 @@ class LinkController extends Controller
      */
     public function index(Link $links)
     {
-        return view('dashoboard', compact('$links'));
+        return view('dashboard', compact('$links'));
     }
 
     /**
