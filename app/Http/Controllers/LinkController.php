@@ -12,8 +12,8 @@ class LinkController extends Controller
      */
     public function index()
     {
-        $links = ShortURL::all();
-        return view('dashboard', compact('links'));
+        // $links = ShortURL::all();
+        // return view('dashboard', compact('links'));
     }
 
     /**
