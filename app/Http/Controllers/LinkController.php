@@ -10,8 +10,9 @@ class LinkController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Link $links)
+    public function index(Link $link)
     {
+        $links = $link->all();
         return view('dashboard', compact('links'));
     }
 
