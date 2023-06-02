@@ -9,7 +9,6 @@ class DashboardController extends Controller
     public function index()
     {
         $links = ShortURL::all();
-        var_dump($links);
         return view('dashboard', compact('links'));
     }
 }
