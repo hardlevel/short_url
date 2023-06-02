@@ -23,15 +23,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($links as $link)
-                        <tr class="bg-gray-800">
-                            <td class="px-4 py-2">{{ $link['url_key'] }}</td>
-                            <td class="px-4 py-2">{{ $link['destination_url'] }}</td>
-                            <td class="px-4 py-2">{{ $link['default_short_url'] }}</td>
-                            <td class="px-4 py-2">{{ $link['default_short_url'] }}</td>
-                            <td class="px-4 py-2">-</td>
-                        </tr>
-                        @endforeach
+
                     </tbody>
                 </table>
             </div>
