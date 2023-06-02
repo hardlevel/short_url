@@ -23,8 +23,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($links as $index => $link)
-                        <tr class="{{ $index % 2 == 0 ? 'bg-gray-800' : 'bg-gray-700' }}">
+                        @foreach ($links as $link)
+                        <tr class="bg-gray-800">
                             <td class="px-4 py-2">{{ $link['url_key'] }}</td>
                             <td class="px-4 py-2">{{ $link['destination_url'] }}</td>
                             <td class="px-4 py-2">{{ $link['default_short_url'] }}</td>
@@ -34,7 +34,7 @@
                         @endforeach
                     </tbody>
                 </table>
-            </div>            
+            </div>
         </div>
     </div>
     @endauth
