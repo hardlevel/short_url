@@ -12,9 +12,15 @@
                     @can('admin')
                     <form method="post" action="{{ route('links.store') }}">
                         @csrf
-                        <input type="text" name="old-link">
-                        <input type="text" name="alias">
-                        <button type="submit">Enviar</button>
+                        <div class="mb-4">
+                            <label for="old-link" class="block text-sm font-medium">Link Original:</label>
+                            <input type="text" name="old-link" id="old-link" class="mt-1 px-2 py-1 w-full rounded-md bg-gray-800 text-white" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="alias" class="block text-sm font-medium">Alias:</label>
+                            <input type="text" name="alias" id="alias" class="mt-1 px-2 py-1 w-full rounded-md bg-gray-800 text-white" required>
+                        </div>
+                        <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">Enviar</button>
                     </form>
                     @elsecan('user')
                         Somente admins pode cadastrar novos links
