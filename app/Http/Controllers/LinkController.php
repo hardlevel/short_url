@@ -10,9 +10,9 @@ class LinkController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Link $links)
     {
-        return view('links');
+        return view('dashoboard', compact('$links'));
     }
 
     /**
