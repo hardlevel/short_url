@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use AshAllenDesign\ShortURL\Models\ShortURL;
 use App\Models\Link;
 use Illuminate\Http\Request;
 
@@ -10,9 +10,9 @@ class LinkController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Link $link)
+    public function index()
     {
-        $links = $link->all();
+        $links = ShortURL::all();
         return view('dashboard', compact('links'));
     }
 
@@ -21,7 +21,7 @@ class LinkController extends Controller
      */
     public function create()
     {
-        //
+        return view('links');
     }
 
     /**
