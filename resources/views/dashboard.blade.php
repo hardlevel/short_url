@@ -20,6 +20,7 @@
                             <th>Link gerado</th>
                         </tr>
                     </thead>
+                    @dd($links)
                     <tbody>
                         @foreach ($links as $link)
                         <tr>
