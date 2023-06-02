@@ -12,7 +12,7 @@
                     <a href="{{ route('links.create') }}">Novo link</a>
                 </div>
             </div>
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg text-gray-900 dark:text-gray-100">
                 <table class="table-auto">
                     <thead>
                         <tr>
