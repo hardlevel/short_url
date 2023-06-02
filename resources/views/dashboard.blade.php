@@ -12,7 +12,7 @@
                     <a href="{{ route('links.create') }}">Novo link</a>
                 </div>
             </div>
-            <div class="bg-gray-900 text-white">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <table class="table-auto">
                     <thead>
                         <tr>
@@ -23,7 +23,15 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                        @foreach ($links as $link)
+                        <tr class="bg-gray-800">
+                            <td class="px-4 py-2">{{ $link['url_key'] }}</td>
+                            <td class="px-4 py-2">{{ $link['destination_url'] }}</td>
+                            <td class="px-4 py-2">{{ $link['default_short_url'] }}</td>
+                            <td class="px-4 py-2">{{ $link['default_short_url'] }}</td>
+                            <td class="px-4 py-2">-</td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
