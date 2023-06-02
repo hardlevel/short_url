@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use AshAllenDesign\ShortURL\Models\ShortURL;
 use Illuminate\Http\Request;
 
